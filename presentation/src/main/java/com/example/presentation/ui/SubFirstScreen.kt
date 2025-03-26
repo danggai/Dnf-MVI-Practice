@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice.ui
+package com.example.presentation.ui
 
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -12,8 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import com.example.dnf_mvi_practice.SubFirstViewModel
-import com.example.dnf_mvi_practice.utils.ComposeUtils.getActivity
+import com.example.presentation.SubFirstViewModel
+import com.example.presentation.utils.ComposeUtils.getActivity
 import org.orbitmvi.orbit.compose.collectAsState
 
 

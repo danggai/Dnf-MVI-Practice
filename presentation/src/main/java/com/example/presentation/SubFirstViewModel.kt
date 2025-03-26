@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice
+package com.example.presentation
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice.utils
+package com.example.presentation.utils
 
 import android.content.Context
 import android.content.ContextWrapper

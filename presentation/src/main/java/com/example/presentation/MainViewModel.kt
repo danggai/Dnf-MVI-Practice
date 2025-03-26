@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice
+package com.example.presentation
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

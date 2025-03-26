@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice.ui.theme
+package com.example.presentation.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography

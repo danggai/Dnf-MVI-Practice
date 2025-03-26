@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice.core
+package com.example.presentation.core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes

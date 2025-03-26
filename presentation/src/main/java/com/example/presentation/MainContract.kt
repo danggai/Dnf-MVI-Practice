@@ -1,8 +1,8 @@
-package com.example.dnf_mvi_practice
+package com.example.presentation
 
-import com.example.dnf_mvi_practice.core.UiEffect
-import com.example.dnf_mvi_practice.core.UiEvent
-import com.example.dnf_mvi_practice.core.UiState
+import com.example.presentation.core.UiEffect
+import com.example.presentation.core.UiEvent
+import com.example.presentation.core.UiState
 
 class MainContract {
     // Events that user performed

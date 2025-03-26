@@ -1,4 +1,4 @@
-package com.example.dnf_mvi_practice.core
+package com.example.presentation.core
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
