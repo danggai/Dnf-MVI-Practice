@@ -1,4 +1,4 @@
-package com.example.mvi_pattern_excercise.ui
+package com.example.dnf_mvi_practice.ui
 
 import android.content.Intent
 import android.widget.Toast
@@ -19,9 +19,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.example.mvi_pattern_excercise.MainContract
-import com.example.mvi_pattern_excercise.MainViewModel
-import com.example.mvi_pattern_excercise.SubFirstActivity
+import com.example.dnf_mvi_practice.MainContract
+import com.example.dnf_mvi_practice.MainViewModel
+import com.example.dnf_mvi_practice.SubFirstActivity
 import org.orbitmvi.orbit.compose.collectAsState
 import org.orbitmvi.orbit.compose.collectSideEffect
 

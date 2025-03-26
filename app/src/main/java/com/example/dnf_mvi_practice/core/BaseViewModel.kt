@@ -1,4 +1,4 @@
-package com.example.mvi_pattern_excercise.core
+package com.example.dnf_mvi_practice.core
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

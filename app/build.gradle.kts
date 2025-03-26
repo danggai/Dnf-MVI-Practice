@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mvi_pattern_excercise"
+    namespace = "com.example.dnf_mvi_practice"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mvi_pattern_excercise"
+        applicationId = "com.example.dnf_mvi_practice"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

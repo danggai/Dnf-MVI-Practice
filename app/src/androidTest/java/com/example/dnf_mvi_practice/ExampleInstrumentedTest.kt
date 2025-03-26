@@ -1,4 +1,4 @@
-package com.example.mvi_pattern_excercise
+package com.example.dnf_mvi_practice
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.mvi_pattern_excercise", appContext.packageName)
+        assertEquals("com.example.dnf_mvi_practice", appContext.packageName)
     }
 }

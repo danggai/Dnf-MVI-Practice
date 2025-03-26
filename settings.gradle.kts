@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "mvi-pattern-excercise"
+rootProject.name = "dnf-mvi-practice"
 include(":app")
  

@@ -1,8 +1,8 @@
-package com.example.mvi_pattern_excercise
+package com.example.dnf_mvi_practice
 
-import com.example.mvi_pattern_excercise.core.UiEffect
-import com.example.mvi_pattern_excercise.core.UiEvent
-import com.example.mvi_pattern_excercise.core.UiState
+import com.example.dnf_mvi_practice.core.UiEffect
+import com.example.dnf_mvi_practice.core.UiEvent
+import com.example.dnf_mvi_practice.core.UiState
 
 class MainContract {
     // Events that user performed

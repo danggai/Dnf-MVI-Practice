@@ -1,4 +1,4 @@
-package com.example.mvi_pattern_excercise.core
+package com.example.dnf_mvi_practice.core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
