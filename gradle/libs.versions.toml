@@ -4,6 +4,7 @@ kotlin = "1.9.0"
 ksp = "1.9.0-1.0.12"
 hilt = "2.51.1"
 orbit = "9.0.0"
+jetbrainsKotlinJvm = "1.9.0"
 
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -55,3 +56,5 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hiltPlugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsKotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

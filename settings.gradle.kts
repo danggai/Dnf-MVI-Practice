@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "dnf-mvi-practice"
 include(":app")
- 
+include(":presentation")
+include(":data")
+include(":domain")
