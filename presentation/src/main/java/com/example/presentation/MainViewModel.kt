@@ -19,7 +19,7 @@ class MainViewModel @Inject constructor() :
     fun onEvent(event: MainContract.Event) {
         when (event) {
             is MainContract.Event.GenerateNumber -> generateRandomNumber()
-            is MainContract.Event.GuessNumber -> guessNumber(event.number)
+            is MainContract.Event.Search -> search(event.server, event.id)
         }
     }
 
@@ -27,25 +27,24 @@ class MainViewModel @Inject constructor() :
         reduce { state.copy(randomNumber = Random.nextInt(1, 1001)) }
     }
 
-    private fun guessNumber(guessedNumber: String) = intent {
-        if (state.randomNumber == null) {
-            postSideEffect(MainContract.Effect.ShowToast("먼저 번호를 생성하세요"))
-            return@intent
-        }
-
-        if (state.randomNumber.toString() == guessedNumber) {
-            postSideEffect(MainContract.Effect.ShowToast("정답!"))
-            postSideEffect(MainContract.Effect.StartSubActivity)
-        } else {
-            postSideEffect(MainContract.Effect.ShowToast("땡"))
-        }
+    private fun search(server: String, id: String) = intent {
+//        if (state.randomNumber.toString() == guessedNumber) {
+//            postSideEffect(MainContract.Effect.ShowToast("정답!"))
+//            postSideEffect(MainContract.Effect.StartResultActivity)
+//        } else {
+//            postSideEffect(MainContract.Effect.ShowToast("땡"))
+//        }
     }
 
-    fun updatePassword(string: String) = intent {
-        reduce { state.copy(password = string) }
+    fun updateServer(server: String) = intent {
+        reduce { state.copy(server = server) }
+    }
+
+    fun updateId(id: String) = intent {
+        reduce { state.copy(id = id) }
     }
 
     fun clearPassword() = intent {
-        reduce { state.copy(password = "") }
+        reduce { state.copy(id = "") }
     }
 }
