@@ -18,7 +18,9 @@ class MainContract {
 
         val server: String = "",
         val id: String = "",
-        val error: String? = null
+        val error: String? = null,
+
+        val serverList: List<String> = listOf("카인", "프레이", "카시야스", "안톤", "루크")
     ) : UiState
 
     // Side effects
