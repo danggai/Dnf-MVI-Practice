@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
 }
 
 android {
@@ -33,10 +34,32 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+
     implementation(libs.material)
+
+    // Coroutines
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
+    // Gson
+    implementation(libs.gson)
+
+    // Hilt - DI
+    implementation(libs.hilt)
+    kapt(libs.hilt.compiler)
+
+    // OkHttp3 & Retrofit
+    implementation(libs.logging.interceptor)
+    implementation(libs.retrofit.gson)
+    implementation(libs.retrofit)
+
+    // Sandwich - Network success/fail Handling
+    implementation(libs.sandwich)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
