@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("kotlin-kapt")
+    alias(libs.plugins.kotlinKsp)
 }
 
 android {
@@ -50,7 +50,7 @@ dependencies {
 
     // Hilt - DI
     implementation(libs.hilt)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     // OkHttp3 & Retrofit
     implementation(libs.logging.interceptor)

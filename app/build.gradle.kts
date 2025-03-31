@@ -44,8 +44,17 @@ dependencies {
     implementation(project(":domain"))
     implementation(project(":presentation"))
 
+    // Hilt - DI
     implementation(libs.hilt)
-    implementation(libs.orbit.core)
-
     ksp(libs.hilt.compiler)
+
+    // OkHttp3 & Retrofit - for network
+    implementation(libs.logging.interceptor)
+    implementation(libs.retrofit.gson)
+    implementation(libs.retrofit)
+
+    // Sandwich - Network success/fail Handling
+    implementation(libs.sandwich)
+
+    implementation(libs.orbit.core)
 }
