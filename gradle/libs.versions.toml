@@ -44,6 +44,9 @@ androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", ve
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 
+# Kotlin
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
@@ -75,6 +78,8 @@ logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-intercep
 
 # Sandwich
 sandwich = { group = "com.github.skydoves", name = "sandwich", version.ref = "sandwich" }
+
+java-inject = { group = "javax.inject", name = "javax.inject", version = "1" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
