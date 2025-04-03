@@ -11,7 +11,7 @@ class ApiKeyInterceptor : Interceptor {
 
         // 기존 URL에 apiKey 추가
         val newUrl = originalUrl.newBuilder()
-            .addQueryParameter("apiKey", Constant.API_KEY)
+            .addQueryParameter("apikey", Constant.API_KEY)
             .build()
 
         val newRequest = originalRequest.newBuilder()

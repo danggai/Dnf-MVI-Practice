@@ -1,5 +1,6 @@
 package com.example.presentation
 
+import com.example.domain.network.servers.entity.Server
 import com.example.presentation.core.UiEffect
 import com.example.presentation.core.UiEvent
 import com.example.presentation.core.UiState
@@ -16,11 +17,11 @@ class MainContract {
         val isLoading: Boolean = false,
         val randomNumber: Int? = null,
 
-        val server: String = "",
+        val server: Server = Server.EMPTY,
         val id: String = "",
         val error: String? = null,
 
-        val serverList: List<String> = listOf("카인", "프레이", "카시야스", "안톤", "루크")
+        val serverList: List<Server> = listOf()
     ) : UiState
 
     // Side effects

@@ -35,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.example.domain.network.servers.entity.Server
 import com.example.presentation.MainContract
 import com.example.presentation.MainViewModel
 import com.example.presentation.SubFirstActivity
@@ -96,7 +97,7 @@ fun SearchBar(viewModel: MainViewModel, state: State<MainContract.State>) {
             val id = remember { mutableStateOf(state.value.id) }
             val isDropDownExpanded = remember { mutableStateOf(false) }
 
-            fun onClickDropDownMenuItem(server: String) {
+            fun onClickDropDownMenuItem(server: Server) {
                 viewModel.updateServer(server)
                 isDropDownExpanded.value = false
             }
@@ -106,7 +107,7 @@ fun SearchBar(viewModel: MainViewModel, state: State<MainContract.State>) {
                     modifier = Modifier
                         .width(130.dp)
                         .clickable { isDropDownExpanded.value = true },
-                    value = state.value.server,
+                    value = state.value.server.serverName,
                     enabled = false,
                     onValueChange = { },
                     trailingIcon = {
@@ -126,7 +127,7 @@ fun SearchBar(viewModel: MainViewModel, state: State<MainContract.State>) {
                 state.value.serverList.forEach { server ->
                     DropdownMenuItem(
                         colors = MenuDefaults.itemColors(textColor = Color.Gray),
-                        text = { Text(server) },
+                        text = { Text(server.serverName) },
                         onClick = { onClickDropDownMenuItem(server) })
                 }
             }
@@ -145,7 +146,12 @@ fun SearchBar(viewModel: MainViewModel, state: State<MainContract.State>) {
             Spacer(modifier = Modifier.width(8.dp))
 
             Button(onClick = {
-                viewModel.onEvent(MainContract.Event.Search(state.value.server, state.value.id))
+                viewModel.onEvent(
+                    MainContract.Event.Search(
+                        state.value.server.serverId,
+                        state.value.id
+                    )
+                )
             }) {
                 Text(text = "검색")
             }
